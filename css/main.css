@@ -9,10 +9,35 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("/w3images/mac.jpg");
+  background-image: url("../images/drill.jpg");
   min-height: 100%;
+  color: #321911;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+}
+
+.text-background {
+  background: #b0583b;
+  padding: 10px;
+  padding-left: 50px;
+
+  -webkit-box-decoration-break: clone;
+  -ms-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+  box-shadow:
+      $padding 0 0 transparent,
+      -$padding 0 0 transparent;
+}
+
+.phone-menu {
+  position: fixed;
+  background: #b0583b;
+  z-index: 1;
+}
+.phone-menu > .w3-bar-item:hover {
+  border-bottom: 2px solid #321911;
+  background: #b0583b !important;
 }
