@@ -11,11 +11,17 @@ body, html {
   background-size: cover;
   background-image: url("../images/drill.jpg");
   min-height: 100%;
-  color: #321911;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+}
+
+.color-theme {
+  color: #321911;
+}
+.indent {
+  text-indent: 50px;
 }
 
 .text-background {
