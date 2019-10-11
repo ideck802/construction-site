@@ -17,14 +17,47 @@ body, html {
   padding: 16px;
 }
 
-.color-theme {
-  color: #321911;
+.padding-small {
+  padding: 12px !important;
 }
+
 .indent {
   text-indent: 50px;
 }
+.color-theme {
+  color: #321911;
+  background: #e6e6e6;
+}
+.color-theme-inverted {
+  color: #321911;
+  background: #b3b3b3;
+}
+.button-theme {
+  color: #321911;
+}
+.button-theme:hover {
+  background: #bf6040 !important;
+}
+.menu-button-theme {
+  color: #321911;
+}
+.menu-button-theme:hover {
+  color: #bf6040 !important;
+  background: transparent !important;
+}
+.link-style:hover {
+  color: #cc8066;
+}
+.footer-menu {
+  padding: 10px;
+}
+.footer {
+  color: #b0583b;
+  background: #404040;
+}
 
 .text-background {
+  color: #321911;
   background: #b0583b;
   padding: 10px;
   padding-left: 50px;
@@ -40,7 +73,8 @@ body, html {
 
 .phone-menu {
   position: fixed;
-  background: #b0583b;
+  color: #321911;
+  background: #ffffff;
   z-index: 1;
 }
 .phone-menu > .w3-bar-item:hover {
