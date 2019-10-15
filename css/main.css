@@ -12,6 +12,12 @@ body, html {
   background-image: url("../images/drill.jpg");
   min-height: 100%;
 }
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/drill.jpg");
+  min-height: 50%;
+}
 
 .w3-bar .w3-button {
   padding: 16px;
@@ -59,8 +65,8 @@ body, html {
 .text-background {
   color: #321911;
   background: #b0583b;
-  padding: 10px;
-  padding-left: 50px;
+  padding: 20px;
+  padding-left: 60px;
 
   -webkit-box-decoration-break: clone;
   -ms-box-decoration-break: clone;
@@ -73,11 +79,6 @@ body, html {
 
 .phone-menu {
   position: fixed;
-  color: #321911;
   background: #ffffff;
   z-index: 1;
-}
-.phone-menu > .w3-bar-item:hover {
-  border-bottom: 2px solid #321911;
-  background: #b0583b !important;
 }
