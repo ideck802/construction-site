@@ -1,3 +1,20 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="ideck802@gmail.com";
+    $Subject="Form to email message";
+    $Name=$_POST["sender"];
+    $Email=$_POST["senderEmail"];
+    $Message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <title>Contact Us &#8211; GB Directional Services, Inc.</title>
@@ -82,17 +99,18 @@
     </div>
   </div>
   <div class="w3-padding-large w3-half">
-    <form action="mailto:ideck802@gmail.com" method="post" enctype="text/plain">
+    <form action="contact.php" method="post" enctype="text/plain">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
       <p>
-        <button class="button-theme w3-round-large w3-button" style="border:2px solid #bf6040;" type="submit">
+        <button class="button-theme w3-round-large w3-button" style="border:2px solid #bf6040;" type="submit" name="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
     </form>
+    <?=$thankYou ?>
   </div>
 </div>
 
