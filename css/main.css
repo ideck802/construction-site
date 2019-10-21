@@ -44,6 +44,11 @@ body, html {
 .button-theme:hover {
   background: #bf6040 !important;
 }
+.input-theme {
+  color: #321911 !important;
+  border:2px solid #bf6040 !important;
+  background: transparent;
+}
 .menu-button-theme {
   color: #321911;
 }
