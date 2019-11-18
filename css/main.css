@@ -49,6 +49,9 @@ body, html {
   border: 1px solid #bf6040 !important;
   background: transparent;
 }
+.input-theme::placeholder {
+  color: #bf6040;
+}
 .menu-button-theme {
   color: #321911;
 }
