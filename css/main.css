@@ -46,7 +46,7 @@ body, html {
 }
 .input-theme {
   color: #321911 !important;
-  border: 1px solid #bf6040 !important;
+  border: 1px solid #321911 !important;
   background: transparent;
 }
 .input-theme::placeholder {
